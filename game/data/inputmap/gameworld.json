@@ -1,0 +1,42 @@
+{
+  "default_static": {
+    "camera_center_move_east": [65, "l", false, false, false, false, false, false, false],
+    "camera_center_move_west": [65, "h", false, false, false, false, false, false, false],
+    "camera_center_move_north": [65, "j", false, false, false, false, false, false, false],
+    "camera_center_move_south": [65, "k", false, false, false, false, false, false, false],
+    "camera_center_move_northwest": [65, "u", false, false, false, false, false, false, false],
+    "camera_center_move_northeast": [65, "i", false, false, false, false, false, false, false],
+    "camera_center_move_southwest": [65, "n", false, false, false, false, false, false, false],
+    "camera_center_move_southeast": [65, "m", false, false, false, false, false, false, false],
+    "camera_center_move_east_alt": [40, 0, false, false, false, false, false, false, false],
+    "camera_center_move_west_alt": [38, 0, false, false, false, false, false, false, false],
+    "camera_center_move_north_alt": [42, 0, false, false, false, false, false, false, false],
+    "camera_center_move_south_alt": [36, 0, false, false, false, false, false, false, false],
+    "camera_center_move_northwest_alt": [41, 0, false, false, false, false, false, false, false],
+    "camera_center_move_northeast_alt": [43, 0, false, false, false, false, false, false, false],
+    "camera_center_move_southwest_alt": [35, 0, false, false, false, false, false, false, false],
+    "camera_center_move_southeast_alt": [37, 0, false, false, false, false, false, false, false]
+  },
+  "default": {
+    "camera_center_move_east": [65, "l", false, false, false, false, false, false, false],
+    "camera_center_move_west": [65, "h", false, false, false, false, false, false, false],
+    "camera_center_move_north": [65, "j", false, false, false, false, false, false, false],
+    "camera_center_move_south": [65, "k", false, false, false, false, false, false, false],
+    "camera_center_move_northwest": [65, "u", false, false, false, false, false, false, false],
+    "camera_center_move_northeast": [65, "i", false, false, false, false, false, false, false],
+    "camera_center_move_southwest": [65, "n", false, false, false, false, false, false, false],
+    "camera_center_move_southeast": [65, "m", false, false, false, false, false, false, false],
+    "camera_center_move_east_alt": [40, 0, false, false, false, false, false, false, false],
+    "camera_center_move_west_alt": [38, 0, false, false, false, false, false, false, false],
+    "camera_center_move_north_alt": [42, 0, false, false, false, false, false, false, false],
+    "camera_center_move_south_alt": [36, 0, false, false, false, false, false, false, false],
+    "camera_center_move_northwest_alt": [41, 0, false, false, false, false, false, false, false],
+    "camera_center_move_northeast_alt": [43, 0, false, false, false, false, false, false, false],
+    "camera_center_move_southwest_alt": [35, 0, false, false, false, false, false, false, false],
+    "camera_center_move_southeast_alt": [37, 0, false, false, false, false, false, false, false]
+  },
+
+  "user": {
+
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "classname": "Mentat",
+  "description": "Born in the Zone and forced to flee as a child, the Mentat has a range of psionic abilities.\n\nStarting HD: 1d6+1\n\nAttack value: 10\n\nSaving throw: 6",
+  "attributes":{
+    "hitdice": ["1d6+1", "2d6+0", "2d6+1", "4d6+0", "4d6+0", "4d6+1", "5d6+0", "6d6+0", "6d6+1", "7d6+0"],
+    "xp": [0, 2500, 5000, 10000, 20000, 40000, 80000, 160000, 320000, 640000],
+    "av": [10, 11, 11, 11, 12, 12, 12, 13, 13, 13],
+    "st": [6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
+    "slots": [true, false, true, false, true, false, true, false, true, false],
+    "groups": [true, false, false, true, false, false, true, false, false, true]
+  }
+}

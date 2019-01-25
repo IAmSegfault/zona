@@ -1,0 +1,12 @@
+{
+  "classname": "Ranger",
+  "description": "A former drifter or criminal, the Ranger has a range of skills and helps others navigate the Zone. \n\nStarting HD: 1d6\n\nAttack value: 10\n\nSaving throw: 7",
+  "attributes":{
+    "hitdice": ["1d6+0", "2d6+0", "2d6+1", "3d6+0", "3d6+1", "4d6+0", "4d6+1", "5d6+0", "5d6+1", "6d6+0"],
+    "xp": [0, 1500, 3000, 6000, 12000, 24000, 48000, 96000, 192000, 384000],
+    "av": [10, 11, 11, 12, 12, 13, 13, 14, 14, 15],
+    "st": [7, 8, 9, 10, 11, 12, 13, 14, 15, 16],
+    "slots": [true, false, false, true, false, false, true, false, false, true],
+    "groups": [true, false, true, false, true, false, true, false, true, false]
+  }
+}
