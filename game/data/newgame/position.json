@@ -2,5 +2,6 @@
   "world_map_pos": [30, 63],
   "superchunk_pos": [1, 1],
   "chunk_pos": [3, 3],
-  "map_pos": [0, 31, 0]
+  "map_pos": [105, 31, 96],
+  "start_map": "Hoveltown"
 }

@@ -5,7 +5,7 @@ from os.path import isfile
 from game.util.conversion import htmltorgb
 from ecs.entities.entity import Entity
 from ecs.entities.superchunk import SuperChunk2D
-from ecs.components.dimension import Area2D
+from ecs.components.dimension import Area2D, SuperChunkArea2D, ChunkArea2D
 from ecs.components.init import IsInit
 from ecs.components.rng import Rng
 class WorldMap(Entity):
@@ -15,7 +15,8 @@ class WorldMap(Entity):
         world.add_component(self.metadata.entity_id, Area2D(width, height))
         world.add_component(self.metadata.entity_id, IsInit())
         world.add_component(self.metadata.entity_id, Rng(seeds, seed_offsets))
-
+        world.add_component(self.metadata.entity_id, SuperChunkArea2D(sc_width, sc_height))
+        world.add_component(self.metadata.entity_id, ChunkArea2D(c_width, c_height))
         self.metadata.containers["superchunks"] = np.zeros((width, height), dtype=np.dtype(object))
 
         seed_container = world.component_for_entity(self.metadata.entity_id, Rng)

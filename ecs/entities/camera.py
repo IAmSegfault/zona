@@ -28,9 +28,13 @@ def world_to_camera_pos(viewport, world_x, world_y):
 
 class AsciiCamera(Entity):
     def __init__(self, world, x1, y1, x2, y2, src_console, xsrc, ysrc, wsrc, hsrc, dst_console, xdst, ydst,
-                 fg_alpha=1.0, bg_alpha=1.0, name="asciicamera"):
+                 fg_alpha=1.0, bg_alpha=1.0, name="asciicamera", tags=None):
+        taglist = ["camera", "ascii"]
+        if tags is not None:
+            for tag in tags:
+                taglist.append(tag)
 
-        super().__init__(world, name, ["camera", "ascii"])
+        super().__init__(world, name, taglist)
         world.add_component(self.metadata.entity_id, Rectangle(x1, y1, x2, y2))
         world.add_component(self.metadata.entity_id, ConsoleHandler(src_console, xsrc, ysrc, wsrc, hsrc, dst_console,
                                                                     xdst, ydst))

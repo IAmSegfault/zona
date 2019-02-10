@@ -36,10 +36,10 @@ GAMEWORLD_INPUT = INPUTMAP_DIR + "/gameworld.json"
 # Fonts
 CP437 = CHARSET_DIR + '/CP437.png'
 DEFERRAL_SRC = CHARSET_DIR + "/Deferral-Square-10-cp437.png"
-ROGUEYUN_SRC = CHARSET_DIR + "/RogueYun_16x16.png"
+ROGUEYUN_SRC = CHARSET_DIR + "/16x16_sm_ascii.png"
 
 DEFERRAL_DST = CHARSET_USER_DIR + "/Deferral-Square-10-cp437.png"
-ROGUEYUN_DST = CHARSET_USER_DIR + "/RogueYun_16x16.png"
+ROGUEYUN_DST = CHARSET_USER_DIR + "/16x16_sm_ascii.png"
 
 STORAGE_SETTINGS = {"limit_fps": 24, "screen_width": 80, "screen_height": 50, "fullscreen": False,
                     "use_mouse": True, "font": False, "prev_font": CP437}

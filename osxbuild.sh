@@ -8,7 +8,7 @@ iconutil -c icns ./z.iconset
 chmod 777 z.icns
 mkdir dist/maingame.app/Contents/MacOS/game
 cp -r game/character_set dist/maingame.app/Contents/MacOS/game/character_set
-cp -r venv/lib/python3.6/site-packages/pyfiglet dist/maingame.app/Contents/MacOS/
+cp -r venv/lib/python3.7/site-packages/pyfiglet dist/maingame.app/Contents/MacOS/
 cp -r game/data dist/maingame.app/Contents/MacOS/game/data
 cp  z.icns dist/maingame.app/Contents/Resources/icon-windowed.icns
 cp appbuild/Info.plist dist/maingame.app/Contents/Info.plist

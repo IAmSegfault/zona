@@ -237,7 +237,7 @@ class SelectionMenu(object):
         self.console = console
         self.selections = selections
         self.menu_select = 0
-        max_selections = 8
+        max_selections = len(selections)
         self.selection_count = max_selections
         if len(selections) < self.selection_count:
             self.selection_count = len(selections)
@@ -793,20 +793,19 @@ class MessageLog(object):
             self.messages.append(message)
             self.message_cursor += 1
             if self.message_cursor > self.message_end:
-
-                self.message_start += 1
-                self.message_end +=1
-
+                for i in range(self.message_cursor - self.message_end):
+                    self.message_start += 1
+                    self.message_end += 1
+        '''
         if self.message_end > self.max_messages:
             count = self.message_end - self.max_messages
             for i in range(count):
                 self.message_cursor -= 1
-                if self.message_cursor < self.message_start:
-                    self.message_start -= 1
+                if self.message_cursor < self.message_end:
                     self.message_end -= 1
-
-
-        self.messages = self.messages[:self.max_messages]
+            self.message_start = self.message_end - self.messages_displayed
+        '''
+        self.messages = self.messages[-self.max_messages:]
         self.message_end = len(self.messages)
         self.message_start = self.message_end - self.messages_displayed if self.message_end > self.messages_displayed else 0
 

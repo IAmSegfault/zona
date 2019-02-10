@@ -82,6 +82,7 @@ class TitleScene(Scene):
                     if config["settings"]["prev_font"]:
                         font = config["settings"]["prev_font"]
                         config["settings"]["font"] = config["settings"]["prev_font"]
+                        config["settings"]["prev_font"] = False
                     else:
                         font = settings.CP437
 

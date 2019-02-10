@@ -11,7 +11,7 @@ class Mapping(object):
                  rmeta=False, shift=False):
 
         self.keycode = keycode
-        # Char for non character keycodes should be 0
+        # Char for non character keycodes should be chr(0)
         self.char = char
         self.lctrl = lctrl
         self.lalt = lalt
@@ -48,7 +48,7 @@ class InputMap(object):
                     if keycode == tcod.KEY_CHAR:
                         char = str(v[1])
                     else:
-                        char = 0
+                        char = chr(0)
                     lctrl = bool(v[2])
                     lalt = bool(v[3])
                     lmeta = bool(v[4])
@@ -66,7 +66,7 @@ class InputMap(object):
                     if keycode == tcod.KEY_CHAR:
                         char = str(v[1])
                     else:
-                        char = 0
+                        char = chr(0)
                     lctrl = bool(v[2])
                     lalt = bool(v[3])
                     lmeta = bool(v[4])
@@ -84,7 +84,7 @@ class InputMap(object):
                     if keycode == tcod.KEY_CHAR:
                         char = str(v[1])
                     else:
-                        char = 0
+                        char = chr(0)
                     lctrl = bool(v[2])
                     lalt = bool(v[3])
                     lmeta = bool(v[4])

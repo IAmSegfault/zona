@@ -11,6 +11,16 @@ class Area2D(object):
         self.height = height
 
 
+class SuperChunkArea2D(Area2D):
+    def __init__(self, width, height):
+        super().__init__(width, height)
+
+
+class ChunkArea2D(Area2D):
+    def __init__(self, width, height):
+        super().__init__(width, height)
+
+
 class Circle(object):
     def __init__(self, radius):
         self.radius = radius
@@ -20,9 +30,11 @@ class WorldFOWCircle(Circle):
     def __init__(self, radius):
         super().__init__(radius)
 
+
 class MapFOWCircle(Circle):
     def __init__(self, radius):
         super().__init__(radius)
+
 
 class Rectangle(object):
     def __init__(self,x1, y1, x2, y2):
@@ -32,3 +44,13 @@ class Rectangle(object):
         # Lower right hand corner
         self.x2 = x2
         self.y2 = y2
+
+
+class Scalar(object):
+    def __init__(self, x):
+        self.x = x
+
+
+class Height(Scalar):
+    def __init__(self, x):
+        super().__init__(x)
